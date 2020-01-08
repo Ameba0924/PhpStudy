@@ -1,0 +1,31 @@
+테이블 총 3개 구성 
+
+create table member(
+    num int not null auto_increment,
+    name char(10),
+    id char(10),
+    pw char(10),
+    repw char(10),
+    gender char(5),
+    email char(20),
+    text char(255),
+    primary key(num) 
+    );
+
+create table list(
+num int not null auto_increment,
+id char(10),
+title char(255),
+contents text,
+time char(100),
+primary key(num));
+
+create table comment(
+    -> num int not null auto_increment,
+    -> id char(10),
+    -> comment text,
+    -> time char(100),
+    -> com_num int unsigned not null,
+    -> primary key(num)
+    -> );
+
